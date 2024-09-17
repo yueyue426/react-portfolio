@@ -1,0 +1,201 @@
+/* Global Styles */
+* {
+  color: white;
+}
+
+/* CSS variables */
+:root {
+  --my-font: monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url('assets/aviator.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(56, 128, 187, 0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header ul {
+  padding-left: 40px;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 19px;
+  font-family: var(--my-font);
+}
+
+/* Navigation Styles */
+header nav ul li a.active {
+  color: #fca311; /* Highlight color for active links */
+  font-weight: bold; /* Optional: make the active link bold */
+  border-bottom: 2px solid #fca311; /* Optional: underline the active link */
+}
+
+/* Main Content Styles */
+main {
+  background-color: rgba(188, 202, 213, 0.20);
+  box-shadow: 5px 5px 20px rgb(13, 13, 13);
+  border-radius: 20px;
+  width: 53%;
+  height: 780px;
+  margin-top: 160px;
+  margin-left: 80px;
+  overflow: auto;
+}
+
+/* About Me Section Styles */
+.about-me {
+  font-family: var(--my-font);
+  padding-top: 220px;
+}
+
+.about-me h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding-top: 50px;
+  padding-left: 90px;
+}
+
+.about-me p {
+  font-size: 15px;
+  padding: 15px 200px 10px 90px;
+  line-height: 1.5;
+}
+
+.about-me h1 img {
+  width: 15%;
+}
+
+/* H2 Styles */
+h2 {
+  font-family: var(--my-font);
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 50px 0 10px 0;
+  margin: 0 200px 0 90px;
+  border-bottom: 2px solid;
+}
+
+/* Projects Section Styles */
+.project {
+  padding-bottom: 150px;
+}
+
+.project-list {
+  width: 100%;
+  position: relative;
+}
+
+.project .project-list a img {
+  width: 63%;
+  margin: 20px 0 0 90px;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+.project .project-list h3 {
+  position: absolute;
+  font-family: var(--my-font);
+  top: 50%;
+  left: 45%;
+  font-size: 20px;
+  color: rgb(246, 245, 238);
+  text-shadow: 2px 2px 4px rgb(15, 14, 14);
+}
+
+/* Contact Me Section Styles */
+.contact-box {
+  width: 40%;
+  height: 200px;
+  margin: 20px 0 0 90px;
+  font-size: 15px;
+  div {
+    padding-top: 20px;
+    font-family: var(--my-font);
+    input {
+      color: black;
+    }
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  color: black;
+}
+
+.btn {
+  background-color: rgb(236, 201, 156);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+/* Footer Styles */
+footer {
+  font-family: var(--my-font);
+  text-align: center;
+  padding-top: 16px;
+}
+
+.footer-icon {
+  width: 30px;
+  margin-inline: 8px;
+}
+
+.footer-icon:hover {
+  transform: scale(120%);
+}
+
+/* Hover Effect for Project Images */
+.project-hover:hover {
+  transform: scale(110%);
+  box-shadow: 8px 8px 15px black;
+}
+
+/* Resume Styles */
+.resume-box {
+  font-family: var(--my-font);
+}
+
+.resume-box div {
+  width: 50%;
+  margin-inline: 12%;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+/* Responsive Design */
+
+/* Tablets - Main Change Size */
+@media screen and (max-width: 992px) {
+  main.main-media {
+      width: 80%;
+  }
+}
+
+/* Large Smartphones - Main Change Size */
+@media screen and (max-width: 768px) {
+  main.main-media {
+      width: 80%;
+  }
+}
+
+/* Small Smartphones - Main Change Size */
+@media screen and (max-width: 576px) {
+  main.main-media {
+      width: 80%;
+  }
+}
